@@ -26,27 +26,6 @@ pd.set_option('future.no_silent_downcasting', True)
 global current_directory
 current_directory = os.getcwd()
 
-def get_cases():
-  with open(os.getcwd() + f'/cases.txt', 'r') as file:
-    lines = file.readlines()
-
-  cv_dict = {}
-  for i, line in enumerate(lines):
-    parts = line.strip().split(';')
-    
-    train_size = int(parts[0].split('=')[1].strip())
-    val_size = int(parts[1].split('=')[1].strip())
-    n_vi = int(parts[2].split('=')[1].strip())
-    n_vi_draws = int(parts[3].split('=')[1].strip())
-    variable = parts[4].split('=')[1].strip()
-    change = float(parts[5].split('=')[1].strip())
-    
-    cv_dict[f'{i+1}'] = {'train_size':train_size, 'val_size':val_size, 'n_vi':n_vi,
-                           'n_vi_draws':n_vi_draws, 'variable':variable, 'change':change}
-      
-  return cv_dict
-
-
 # constructing the dataframe containing the state borders, for plotting purposes
 class UMW:
   def __init__(self, filepath):
