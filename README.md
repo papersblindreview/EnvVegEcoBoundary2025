@@ -1,6 +1,4 @@
-# Biome Boundary
-
-Supplemental codes and data for "Modeling Midwestern Prairie-Forest Ecotone and Environment-Vegetation Feedback with a Hierarchical Bayesian Model".
+## Supplemental codes and data for "Modeling Midwestern Prairie-Forest Ecotone and Environment-Vegetation Feedback with a Hierarchical Bayesian Model".
 
 The `data` folder contains the data used to train the model:
 1) `8km.r` is the PLS data
