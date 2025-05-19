@@ -6,4 +6,4 @@ There are three scripts in the code folder:
 
 1) `functions.py` contains helper functions to load and preprocess the data
 2) `model.py` contains code to run the hierarchical Bayesian model
-3) `model_val.py` contains code to interpolate in space
+3) `model_val.py` contains code to run validation and interpolate in space
