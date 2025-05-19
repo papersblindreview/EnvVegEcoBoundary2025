@@ -5,7 +5,7 @@ The `data` folder contains the data used to train the model:
 2) `env` contains the environmental variables
 3) `US_MAP` is an auxilliary dataset (containing a map of the continental US) to preprocess the data
 
-The code folder contains the scripts to run and validate the model:
+The `code` folder contains the scripts to run and validate the model:
 1) `functions.py` contains helper functions to load and preprocess the data
 2) `model.py` contains code to run the hierarchical Bayesian model
 3) `model_val.py` contains code to run validation and interpolate in space
